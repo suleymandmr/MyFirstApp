@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyFirstApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Metallica App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cZ-Jh-gSD">
+                                <rect key="frame" x="83" y="98" width="263" height="143"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="143" id="qbc-PM-2Co"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="metallicaa" translatesAutoresizingMaskIntoConstraints="NO" id="aR8-fW-M3a">
+                                <rect key="frame" x="64" y="249" width="282" height="185"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v54-7K-Ydk">
+                                <rect key="frame" x="141" y="494" width="129" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="TI8-gW-hBu"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Change"/>
+                                <connections>
+                                    <action selector="changeClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="svw-Gb-Uzc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aR8-fW-M3a" firstAttribute="centerX" secondItem="v54-7K-Ydk" secondAttribute="centerX" id="4B6-Uj-Kif"/>
+                            <constraint firstItem="8cZ-Jh-gSD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6J3-bc-d35"/>
+                            <constraint firstItem="aR8-fW-M3a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="6ZA-xI-gCs"/>
+                            <constraint firstItem="8cZ-Jh-gSD" firstAttribute="trailing" secondItem="aR8-fW-M3a" secondAttribute="trailing" id="CBI-Oz-lzp"/>
+                            <constraint firstItem="v54-7K-Ydk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="141" id="PQa-u9-ug2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="v54-7K-Ydk" secondAttribute="bottom" constant="352" id="Qen-5z-iz6"/>
+                            <constraint firstItem="8cZ-Jh-gSD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="83" id="U1T-ZD-cq8"/>
+                            <constraint firstItem="aR8-fW-M3a" firstAttribute="top" secondItem="8cZ-Jh-gSD" secondAttribute="bottom" constant="8" id="XeL-6v-5Xa"/>
+                            <constraint firstItem="v54-7K-Ydk" firstAttribute="top" secondItem="aR8-fW-M3a" secondAttribute="bottom" constant="60" id="etk-7l-mK4"/>
+                            <constraint firstItem="8cZ-Jh-gSD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="iFW-CQ-5qg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="aR8-fW-M3a" id="O3J-jb-Afh"/>
+                        <outlet property="mettallicaLabel" destination="8cZ-Jh-gSD" id="8Ye-6M-tZF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="22.429906542056074" y="-34.98920086393089"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="metallicaa" width="740" height="530"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
